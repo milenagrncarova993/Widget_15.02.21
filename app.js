@@ -8,7 +8,19 @@ function fetchData(){
   })
   .then(data => {
     console.log(data);
-  }).catch(error => {
+    const html = data
+      .map(user => {
+        return`
+        <div class="user">
+        <p><img src="${user.image}" alt="${user.name}"/></p>
+        <p>${user.caption}</p>
+        </div>`;
+      })
+      .join("");
+    console.log(html);
+    document.querySelector("#app").insertAdjacentHTML("afterbegin",html);
+  })
+  .catch(error => {
     console.log(error)
   });
 }
