@@ -18,7 +18,7 @@ function fetchData(){
 
 function userTemplate(user){
   return`
-    <div class="cards">
+    <a href="" class="cards">
       <div class= "top-part">
         <img class="avatar"src="${user.profile_image}" alt="profile-image"/>
         <div class ="top-part-content">
@@ -36,7 +36,7 @@ function userTemplate(user){
         <img src="icons/heart.svg" alt="heart-logo"/>
         ${user.likes}
       </div>
-    </div>`
+    </a>`
 }
 
 fetchData();
