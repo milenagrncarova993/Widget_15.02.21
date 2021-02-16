@@ -36,7 +36,15 @@ function userTemplate(user){
         <img src="icons/heart.svg" alt="heart-logo"/>
         ${user.likes}
       </div>
-    </a>`
+    </a>
+    
+    <div class="popup">
+      <div class="popup-content">
+      
+      </div>
+    </div>
+    
+    `
 }
 
 fetchData();
