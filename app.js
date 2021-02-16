@@ -18,17 +18,17 @@ function fetchData(){
 
 function userTemplate(user){
   return`
-      <div class="cards">
-        <img src="${user.profile_image}" alt="profile-image"/>
-        ${user.name}
-        ${user.date}
-        <img src="icons/instagram-logo.svg" alt="instagram-logo"/>
-        ${user.image}
-        ${user.caption}
-        <hr>
-        <img src="icons/heart.svg" alt="heart-logo"/>
-        ${user.likes}
-      </div>`
+    <div class="cards">
+      <img src="${user.profile_image}" alt="profile-image"/>
+      ${user.name}
+      ${user.date}
+      <img src="icons/instagram-logo.svg" alt="instagram-logo"/>
+      ${user.image}
+      ${user.caption}
+      <hr>
+      <img src="icons/heart.svg" alt="heart-logo"/>
+      ${user.likes}
+    </div>`
 }
 
 fetchData();
