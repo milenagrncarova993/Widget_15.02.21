@@ -7,22 +7,28 @@ function fetchData(){
       return response.json();
   })
   .then(data => {
-    console.log(data);
     const html = data
-      .map(user => {
-        return`
-        <div class="user">
-        <p><img src="${user.image}" alt="${user.name}"/></p>
-        <p>${user.caption}</p>
-        </div>`;
-      })
-      .join("");
-    console.log(html);
+    .map(userTemplate).join("");
     document.querySelector("#app").insertAdjacentHTML("afterbegin",html);
   })
   .catch(error => {
     console.log(error)
   });
+}
+
+function userTemplate(user){
+  return`
+      <div class="cards">
+        <img src="${user.profile_image}" alt="profile-image"/>
+        ${user.name}
+        ${user.date}
+        <img src="icons/instagram-logo.svg" alt="instagram-logo"/>
+        ${user.image}
+        ${user.caption}
+        <hr>
+        <img src="icons/heart.svg" alt="heart-logo"/>
+        ${user.likes}
+      </div>`
 }
 
 fetchData();
