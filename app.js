@@ -42,10 +42,21 @@ function userTemplate(user){
       <div class="popup-content">
         <img class="popup-image"src="${user.image}" alt="image"/>
         <div class="popup-desc">
-          <img class="avatar"src="${user.profile_image}" alt="profile-image"/>
-          <div class ="top-part-content">
-            <p><strong>${user.name}</strong><p>
-            <p>${user.date}</p>
+          <div class= "top-part">
+            <img class="avatar"src="${user.profile_image}" alt="profile-image"/>
+            <div class ="top-part-content">
+              <p><strong>${user.name}</strong><p>
+              <p>${user.date}</p>
+            </div>
+            <img src="icons/instagram-logo.svg" alt="instagram-logo"/>
+          </div>
+          <hr>
+          <div class="middle-part">
+            <p>#${user.caption}</p>
+          </div>
+          <div class="bottom-part">
+            <img src="icons/heart.svg" alt="heart-logo"/>
+            ${user.likes}
           </div>
         </div>
       </div>
