@@ -13,12 +13,17 @@ function fetchData(){
   })
   .catch(error => {
     console.log(error)
-  });
+  })
+
+  document.getElementById("card").addEventListener("click", function(){
+  document.querySelector(".popup").style.display="flex";
+  })
+
 }
 
 function userTemplate(user){
   return`
-    <a href="" class="cards">
+    <a href="" class="cards" id="card">
       <div class= "top-part">
         <img class="avatar"src="${user.profile_image}" alt="profile-image"/>
         <div class ="top-part-content">
@@ -61,8 +66,8 @@ function userTemplate(user){
         </div>
       </div>
     </div>
-    
     `
 }
+
 
 fetchData();
