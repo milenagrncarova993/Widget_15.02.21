@@ -19,10 +19,14 @@ function fetchData(){
 function userTemplate(user){
   return`
     <div class="cards">
-      <img src="${user.profile_image}" alt="profile-image"/>
-      ${user.name}
-      ${user.date}
-      <img src="icons/instagram-logo.svg" alt="instagram-logo"/>
+      <div class= "top-part">
+        <img class="avatar"src="${user.profile_image}" alt="profile-image"/>
+        <div class ="top-part-content">
+          <p><strong>${user.name}</strong><p>
+          <p>${user.date}</p>
+        </div>
+        <img src="icons/instagram-logo.svg" alt="instagram-logo"/>
+      </div>
       ${user.image}
       ${user.caption}
       <hr>
