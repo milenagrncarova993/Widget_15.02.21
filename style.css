@@ -51,6 +51,7 @@
   max-width:100%;
   max-height: 100%;
   display:block;
+  object-fit: contain;
 }
 
 .bottom-part{
@@ -105,6 +106,19 @@
 }
 } */
 
+#loadmore {
+  color: white;
+  padding: 8px 24px;
+  border-radius: 4px;
+  background: #1EDD88;
+}
+
+#app .cards:nth-child(1) {
+  display: block;
+}
+#app .cards:nth-child(2) {
+  display: block;
+}
 
 .popup{
   background: rgba(0, 0, 0,0.06);

@@ -14,11 +14,6 @@ function fetchData(){
   .catch(error => {
     console.log(error)
   })
-
-  document.getElementById("card").addEventListener("click", function(){
-  document.querySelector(".popup").style.display="flex";
-  })
-
 }
 
 function userTemplate(user){
