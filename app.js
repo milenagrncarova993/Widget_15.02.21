@@ -40,7 +40,14 @@ function userTemplate(user){
     
     <div class="popup">
       <div class="popup-content">
-      
+        <img class="popup-image"src="${user.image}" alt="image"/>
+        <div class="popup-desc">
+          <img class="avatar"src="${user.profile_image}" alt="profile-image"/>
+          <div class ="top-part-content">
+            <p><strong>${user.name}</strong><p>
+            <p>${user.date}</p>
+          </div>
+        </div>
       </div>
     </div>
     
