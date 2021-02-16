@@ -27,11 +27,15 @@ function userTemplate(user){
         </div>
         <img src="icons/instagram-logo.svg" alt="instagram-logo"/>
       </div>
-      ${user.image}
-      ${user.caption}
+      <div class="middle-part">
+        <img class="image"src="${user.image}" alt="image"/>
+        <p>#${user.caption}</p>
+      </div>
       <hr>
-      <img src="icons/heart.svg" alt="heart-logo"/>
-      ${user.likes}
+      <div class="bottom-part">
+        <img src="icons/heart.svg" alt="heart-logo"/>
+        ${user.likes}
+      </div>
     </div>`
 }
 
