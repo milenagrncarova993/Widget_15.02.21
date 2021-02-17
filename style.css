@@ -1,3 +1,4 @@
+/* <-------------- Cards --------------> */
 #app {
   display: grid;
   grid-template-columns: 1fr 1fr 1fr 1fr;
@@ -13,7 +14,6 @@
   margin-bottom: 8px;
   text-decoration: none;
   color:black;
-  /* display:none; */
 }
 
 .top-part{
@@ -106,6 +106,8 @@
 }
 } */
 
+/* <-------------- Button --------------> */
+
 #loadmore {
   color: white;
   padding: 16px 32px;
@@ -123,7 +125,7 @@
   color: white;
 }
 
-
+/* <-------------- Popup --------------> */
 .popup{
   background: rgba(0, 0, 0,0.1);
   width: 100%;
