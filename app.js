@@ -23,6 +23,7 @@ function fetchData(){
     console.log(error)
   })
 }
+
 var index = 0;
 var pictures = null;
 
