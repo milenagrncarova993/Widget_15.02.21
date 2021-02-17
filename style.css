@@ -109,6 +109,7 @@
 #loadmore {
   color: white;
   padding: 16px 32px;
+  margin-bottom: 80px;
   border-radius: 4px;
   background:#1EDD88;
   border:none;
@@ -121,13 +122,6 @@
   color: white;
 }
 
-
-#app .cards:nth-child(1) {
-  display: block;
-}
-#app .cards:nth-child(2) {
-  display: block;
-}
 
 .popup{
   background: rgba(0, 0, 0,0.1);
