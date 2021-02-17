@@ -75,7 +75,7 @@ function showPopup(user){
 
 function userTemplate(user,i){
   return`
-    <div id="${i}"class="container">
+    <a href"" id="${i}" class="container">
       <div class= "top-part">
         <img class="avatar"src="${user.profile_image}" alt="profile-image"/>
         <div class ="top-part-content">
@@ -93,7 +93,7 @@ function userTemplate(user,i){
         <img src="icons/heart.svg" alt="heart-logo"/>
         ${user.likes}
       </div>
-    </div>
+    </a>
     
     `
 }
