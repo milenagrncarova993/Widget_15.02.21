@@ -5,14 +5,15 @@
   margin-top: 40px;
   padding: 50px;
 }
-.cards {
+.container {
   position:relative;
   border: 1px solid rgb(210,210,210);
-  padding: 16px 24px;
+  padding: 16px 16px;
   align-items: center;
   margin-bottom: 8px;
   text-decoration: none;
   color:black;
+  /* display:none; */
 }
 
 .top-part{
@@ -37,7 +38,7 @@
   width: 50px;
   height: 50px;
   border-radius: 50%;
-  /* object-fit: contain; would use this but some of the avatar pics are not avatar size i think */
+  object-fit: cover;
 }
 
 .middle-part{
@@ -47,10 +48,10 @@
 }
 
 .middle-part .image{
-  max-width:100%;
-  max-height: 100%;
+  width:100%;
+  height: 20vw;
   display:block;
-  object-fit: contain;
+  object-fit: cover;
 }
 
 .bottom-part{
@@ -107,10 +108,19 @@
 
 #loadmore {
   color: white;
-  padding: 8px 24px;
+  padding: 16px 32px;
   border-radius: 4px;
-  background: #1EDD88;
+  background:#1EDD88;
+  border:none;
+  position: absolute;
+  left: 50%;
 }
+
+#loadmore :hover {
+  background: #1BCB7F;
+  color: white;
+}
+
 
 #app .cards:nth-child(1) {
   display: block;
@@ -120,14 +130,15 @@
 }
 
 .popup{
-  background: rgba(0, 0, 0,0.06);
+  background: rgba(0, 0, 0,0.1);
   width: 100%;
   height: 100%;
   position: absolute;
   top:0;
-  display:none;
+  display:flex;
   justify-content: center;
   align-items: center;
+  object-fit: cover;
 }
 
 .popup-content{
@@ -144,6 +155,8 @@
   width: 50%;
   background-size: cover;
   background-position: center;
+  object-fit: contain;
+
 }
 
 .popup-content .popup-desc{
