@@ -105,7 +105,7 @@ function loadmore(){
   document.querySelector("#app").insertAdjacentHTML("beforeend",next);
   var elements = document.getElementsByClassName("container");
   for(var i=index; i<elements.length; i++) {
-      // index = i;
+      index = i;
       if (i >= elements.length){
         elements[i].style.display="none";
       }
